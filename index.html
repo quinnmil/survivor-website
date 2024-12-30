@@ -3,36 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survivor Game Event</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Quinn's Survivor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .date {
+            text-align: center;
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .event-image {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 0 auto 2rem;
+            border-radius: 8px;
+        }
+
+        .description {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #444;
+        }
+
+        .rsvp-button {
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .rsvp-button:hover {
+            background-color: #1d4ed8;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
 </head>
-<body class="bg-gray-100 min-h-screen">
-    <div class="container mx-auto px-4 py-8">
-        <div class="max-w-2xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="p-6">
-                <h1 class="text-4xl font-bold text-center mb-4">Quinn's 30th Birthday</h1>
-                
-                <div class="text-xl text-center text-gray-600">
-                    Lake Merwin, Washington
-                </div>
-                <div class="text-xl text-center text-gray-600 mb-8">
-                    September 6-8, 2025
-                </div>
-
-                <img src="assets/survivor_logo.png" alt="Survivor Event" class="w-3/4 mx-auto block rounded-lg mb-8">
-
-                <div class="text-center mb-8">
-                    <p class="text-gray-700 mb-6">
-                        We hope you can join us! Please RSVP below. 
-                    </p>
-                    
-                    <!-- Replace the # with your Google Form URL -->
-                    <a href="#" 
-                       class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition duration-300">
-                        RSVP Form
-                    </a>
-                </div>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="/assets/survivor_logo.png" alt="Survivor Event" class="event-image">
+            <div class="date">    
+                Lake Merwin, Washington
+                <br>
+                September 6-8, 2025
             </div>
+            <div class="date">
+            </div>
+
+
+            <p class="description">
+                We're so excited to be putting on this special weekend to celebrate Quinn's 30th birthday, we hope you can all make it out!
+            </p>
+            
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfzAIaagQCi0p0PBTwBJn1luVEwzTG13nTK6XnsIF0R-5i_bQ/viewform?usp=dialog" class="rsvp-button">
+                RSVP
+            </a>
         </div>
     </div>
 </body>
